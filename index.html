@@ -17,55 +17,75 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
     <link href="css/styles.css" rel="stylesheet" />
     <style>
-        /* Override theme colors: teal + green for sustainability */
+        /*
+         * Color palette:
+         *   darkest:  #22577A (deep blue-green)
+         *   dark:     #38A3A5 (teal)
+         *   mid:      #57CC99 (green)
+         *   bright:   #80ED99 (light green)
+         *   lightest: #C7F9CC (pale mint)
+         *
+         * Two main tones: #38A3A5 (teal) and #57CC99 (green)
+         * Background: very light mint
+         */
         :root {
-            --bs-primary: #0d7377;
-            --bs-secondary: #2a9d4e;
-            --bs-primary-rgb: 13, 115, 119;
-            --bs-secondary-rgb: 42, 157, 78;
-            --bs-link-color: #0d7377;
-            --bs-link-hover-color: #0a5c5f;
+            --bs-primary: #22577A;
+            --bs-secondary: #38A3A5;
+            --bs-primary-rgb: 34, 87, 122;
+            --bs-secondary-rgb: 56, 163, 165;
+            --bs-link-color: #22577A;
+            --bs-link-hover-color: #1a4360;
+            --bs-light: #edf5f5;
+            --bs-light-rgb: 237, 245, 245;
+        }
+        .bg-light {
+            background-color: #edf5f5 !important;
+        }
+        th {
+            background-color: #d4e8e8 !important;
         }
         .bg-gradient-primary-to-secondary {
-            background: #0d7377 !important;
-            background: linear-gradient(135deg, #0d7377 0%, #2a9d4e 100%) !important;
+            background: #22577A !important;
+            background: linear-gradient(135deg, #22577A 0%, #38A3A5 100%) !important;
         }
         .text-gradient {
-            background: -webkit-linear-gradient(315deg, #0d7377 0%, #2a9d4e 100%) !important;
+            background: -webkit-linear-gradient(315deg, #22577A 0%, #38A3A5 100%) !important;
             -webkit-background-clip: text !important;
             -webkit-text-fill-color: transparent !important;
         }
         .btn-primary {
-            --bs-btn-bg: #0d7377;
-            --bs-btn-border-color: #0d7377;
-            --bs-btn-hover-bg: #0a5c5f;
-            --bs-btn-hover-border-color: #0a5c5f;
-            --bs-btn-active-bg: #084a4d;
-            --bs-btn-active-border-color: #084a4d;
-            --bs-btn-disabled-bg: #0d7377;
-            --bs-btn-disabled-border-color: #0d7377;
+            --bs-btn-color: #fff;
+            --bs-btn-bg: #22577A;
+            --bs-btn-border-color: #22577A;
+            --bs-btn-hover-bg: #1a4360;
+            --bs-btn-hover-border-color: #1a4360;
+            --bs-btn-active-bg: #143450;
+            --bs-btn-active-border-color: #143450;
+            --bs-btn-disabled-bg: #22577A;
+            --bs-btn-disabled-border-color: #22577A;
         }
         .btn-secondary {
-            --bs-btn-bg: #2a9d4e;
-            --bs-btn-border-color: #2a9d4e;
-            --bs-btn-hover-bg: #228040;
-            --bs-btn-hover-border-color: #228040;
-            --bs-btn-active-bg: #1b6633;
-            --bs-btn-active-border-color: #1b6633;
-            --bs-btn-disabled-bg: #2a9d4e;
-            --bs-btn-disabled-border-color: #2a9d4e;
+            --bs-btn-color: #fff;
+            --bs-btn-bg: #38A3A5;
+            --bs-btn-border-color: #38A3A5;
+            --bs-btn-hover-bg: #2e8c8e;
+            --bs-btn-hover-border-color: #2e8c8e;
+            --bs-btn-active-bg: #22577A;
+            --bs-btn-active-border-color: #22577A;
+            --bs-btn-disabled-bg: #38A3A5;
+            --bs-btn-disabled-border-color: #38A3A5;
         }
         .text-primary {
-            color: #0d7377 !important;
+            color: #22577A !important;
         }
         .text-secondary {
-            color: #2a9d4e !important;
+            color: #38A3A5 !important;
         }
         a {
-            color: #0d7377;
+            color: #22577A;
         }
         a:hover {
-            color: #0a5c5f;
+            color: #1a4360;
         }
     </style>
 </head>
@@ -324,7 +344,7 @@
                                     <img src="assets/mckennaparnes.jpg" alt="McKenna F. Parnes"
                                         class="img-fluid rounded-circle mb-3"
                                         style="width: 150px; height: 150px; object-fit: cover;">
-                                    <h5><a href="https://www.brite.uw.edu/mckenna-parnes" class="text-decoration-none"
+                                    <h5><a href="https://www.seattlechildrens.org/directory/mckenna-parnes/" class="text-decoration-none"
                                             target="_blank">McKenna F. Parnes</a></h5>
                                     <p class="text-muted">Seattle Children's Research Institute</p>
                                 </div>
