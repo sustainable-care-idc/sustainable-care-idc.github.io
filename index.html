@@ -44,6 +44,12 @@
         th {
             background-color: #d4e8e8 !important;
         }
+        #agenda .agenda-table {
+            border-collapse: collapse;
+        }
+        #agenda .agenda-table > :not(caption) > * > * {
+            border: 1px solid var(--bs-border-color);
+        }
         .bg-gradient-primary-to-secondary {
             background: #22577A !important;
             background: linear-gradient(135deg, #22577A 0%, #38A3A5 100%) !important;
@@ -103,8 +109,9 @@
                         class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
-                        <li class="nav-item"><a class="nav-link" href="#agenda">Agenda</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#overview">Overview</a></li>
                         <li class="nav-item"><a class="nav-link" href="#organizers">Organizers</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#agenda">Agenda</a></li>
                         <li class="nav-item"><a class="nav-link" href="#cfp">Call for Participation</a></li>
                     </ul>
                 </div>
@@ -253,6 +260,122 @@
                     </div>
                 </section>
 
+                <!-- Agenda Section-->
+                <section id="agenda">
+                    <div class="d-flex align-items-center justify-content-between mb-4">
+                        <h2 class="text-secondary fw-bolder mb-0">Workshop Agenda</h2>
+                    </div>
+                    <div class="card shadow border-0 rounded-4 mb-5">
+                        <div class="card-body p-5">
+                            <div class="row align-items-center gx-5">
+                                <div class="col-lg-12">
+                                    <div class="table-responsive">
+                                        <table class="table agenda-table align-middle mb-0">
+                                            <thead>
+                                                <tr>
+                                                    <th style="width: 20%;">Time</th>
+                                                    <th>Activity and Description</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>09:00 - 09:20</td>
+                                                    <td>
+                                                        <strong>Welcome &amp; Intros</strong>
+                                                        <ul class="mb-0 mt-2">
+                                                            <li>Name</li>
+                                                            <li>Institution / program / position</li>
+                                                            <li>Research area &amp; interests</li>
+                                                            <li>What brings you to this workshop?</li>
+                                                            <li>Fun facts</li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>09:20 - 09:30</td>
+                                                    <td><strong>Workshop goal writing &amp; sharing</strong></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>09:30 - 09:45</td>
+                                                    <td><strong>Workshop theme intro</strong></td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    <td>(form groups?)</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>09:45 - 10:30</td>
+                                                    <td>
+                                                        <strong>Session #1:</strong> Sustainable vs. unsustainable care
+                                                        <div class="fw-semibold mt-2">Example discussion questions:</div>
+                                                        <ul class="mb-0 mt-2">
+                                                            <li>How do you interpret &ldquo;sustainable care?&rdquo;</li>
+                                                            <li>What does sustainable or unsustainable care look like in
+                                                                your research?</li>
+                                                            <li>How do you define sustainability?</li>
+                                                            <li>How do you define care?</li>
+                                                            <li>What does sustainability, care, sustainable care, or
+                                                                unsustainable care look like outside your research?
+                                                            </li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>10:30 - 11:00</td>
+                                                    <td><strong>Coffee break</strong></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>11:00 - 11:30</td>
+                                                    <td>
+                                                        <strong>Session #2:</strong> Sustainability, care, and
+                                                        sustainable care
+                                                        <div class="fw-semibold mt-2">Example discussion questions:</div>
+                                                        <ul class="mb-0 mt-2">
+                                                            <li>What can we learn from these cases?</li>
+                                                            <li>What experiences and practical knowledge can help support
+                                                                sustainable care?</li>
+                                                            <li>What experiences and practical knowledge can help us
+                                                                intervene when care becomes unsustainable?</li>
+                                                            <li>What can we do better as researchers?</li>
+                                                            <li>What can we do better as adults?</li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>11:30 - 12:00</td>
+                                                    <td>
+                                                        <strong>Session #3:</strong> Towards sustainable care in
+                                                        children&rsquo;s technology
+                                                        <div class="fw-semibold mt-2">Example discussion questions:</div>
+                                                        <ul class="mb-0 mt-2">
+                                                            <li>How does technology support or undermine sustainable
+                                                                care? For whom, and how?</li>
+                                                            <li>From sessions #1 and #2, what insights are transferable
+                                                                to the context of children and technology?
+                                                            </li>
+                                                            <li>What other topics related to sustainable care did you want
+                                                                to discuss but did not get a chance to raise?</li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>12:00 - 12:20</td>
+                                                    <td><strong>Workshop goal alignment &amp; personal action item &amp;
+                                                            reflection</strong></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>12:20 - 12:30</td>
+                                                    <td><strong>Closing remark // group photo!</strong></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
                 <!-- CFP Section-->
                 <section id="cfp">
                     <div class="d-flex align-items-center justify-content-between mb-4">
@@ -315,106 +438,6 @@
                         </div>
                     </div>
                 </section>
-
-                <!-- Agenda Section-->
-                <section id="agenda">
-                    <div class="d-flex align-items-center justify-content-between mb-4">
-                        <h2 class="text-secondary fw-bolder mb-0">Workshop Agenda (TBU)</h2>
-                    </div>
-                    <div class="card shadow border-0 rounded-4 mb-5">
-                        <div class="card-body p-5">
-                            <div class="row align-items-center gx-5">
-                                <div class="col-lg-12">
-                                    <table class="mx-auto">
-                                        <thead>
-                                            <tr>
-                                                <th style="width: 20%;">Time</th>
-                                                <th>Activity and Description</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>9:00&ndash;9:10am</td>
-                                                <td><strong>Welcome, agenda, and goals for the day</strong></td>
-                                            </tr>
-                                            <tr>
-                                                <td>9:10&ndash;9:35am</td>
-                                                <td><strong>Participant introductions:</strong> name, context, and what
-                                                    you hope to take away from today</td>
-                                            </tr>
-                                            <tr>
-                                                <td>9:35&ndash;9:45am</td>
-                                                <td><strong>Introduction to the workshop theme</strong> and four themes
-                                                    of sustainable care</td>
-                                            </tr>
-                                            <tr>
-                                                <td>9:45&ndash;10:05am</td>
-                                                <td><strong>Individual reflection:</strong> recall a moment of
-                                                    &ldquo;unsustainable care,&rdquo; either firsthand or observed in
-                                                    close others (write individually, then share briefly in small groups)
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>10:05&ndash;10:30am</td>
-                                                <td><strong>Break</strong></td>
-                                            </tr>
-                                            <tr>
-                                                <td>10:30&ndash;11:15am</td>
-                                                <td><strong>Roundtable 1</strong> (grouped by thematic interest):
-                                                    identify patterns of unsustainable care within the group's topic
-                                                    area, how different stakeholders are affected or contribute, and the
-                                                    role of children in particular</td>
-                                            </tr>
-                                            <tr>
-                                                <td>11:15&ndash;11:30am</td>
-                                                <td><strong>Report-back:</strong> each group shares key takeaways with
-                                                    the full workshop</td>
-                                            </tr>
-                                            <tr>
-                                                <td>11:30am&ndash;1:30pm</td>
-                                                <td><strong>Lunch</strong></td>
-                                            </tr>
-                                            <tr>
-                                                <td>1:30&ndash;2:00pm</td>
-                                                <td><strong>Nap time, stretch, and individual reflection</strong></td>
-                                            </tr>
-                                            <tr>
-                                                <td>2:00&ndash;2:45pm</td>
-                                                <td><strong>Roundtable 2</strong> (grouped by technology of interest):
-                                                    examine how specific technologies mediate unsustainable care, the
-                                                    stakeholders involved, and the implications for children</td>
-                                            </tr>
-                                            <tr>
-                                                <td>2:45&ndash;3:10pm</td>
-                                                <td><strong>Break</strong></td>
-                                            </tr>
-                                            <tr>
-                                                <td>3:10&ndash;4:00pm</td>
-                                                <td><strong>Roundtable 3</strong> (return to Roundtable 1 groups): share
-                                                    insights from Roundtable 2 and map them onto the four themes of
-                                                    sustainable care&mdash;bounded responsibility, actionable pathways,
-                                                    resilience through community, and mental health
-                                                    orientation&mdash;to develop concrete action plans (e.g., research
-                                                    collaborations, strategies for embedding sustainable care in ongoing
-                                                    work, draft guidelines for the group's domain)</td>
-                                            </tr>
-                                            <tr>
-                                                <td>4:00&ndash;4:30pm</td>
-                                                <td><strong>Report-back:</strong> each group shares action plans with
-                                                    the full workshop</td>
-                                            </tr>
-                                            <tr>
-                                                <td>4:30&ndash;5:00pm</td>
-                                                <td><strong>Closing:</strong> feedback, next steps, planned outputs, and
-                                                    follow-up process</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
             </div>
         </div>
     </div>
@@ -435,9 +458,10 @@
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             const links = [
-                { linkSelector: 'a[href="#cfp"]', sectionId: 'cfp' },
+                { linkSelector: 'a[href="#overview"]', sectionId: 'overview' },
+                { linkSelector: 'a[href="#organizers"]', sectionId: 'organizers' },
                 { linkSelector: 'a[href="#agenda"]', sectionId: 'agenda' },
-                { linkSelector: 'a[href="#organizers"]', sectionId: 'organizers' }
+                { linkSelector: 'a[href="#cfp"]', sectionId: 'cfp' }
             ];
 
             function addLinkClickListener(linkSelector, sectionId) {
